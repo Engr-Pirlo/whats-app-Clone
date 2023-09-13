@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app"
-import {getAuth} from 'firebase/app'
+import {getAuth} from 'firebase/auth'
 const firebaseConfig = {
     apiKey: "AIzaSyAtpjrr-lIGrrL_hLXmfMO6V1SRH2D9q2Y",
     authDomain: "what-sapp-clone-14f2c.firebaseapp.com",
@@ -12,5 +12,5 @@ const firebaseConfig = {
 
 
 const app  = initializeApp(firebaseConfig);
-export const firebaseAuth = getAuth(app)
+export const firebaseAuth = getAuth(app);
  
