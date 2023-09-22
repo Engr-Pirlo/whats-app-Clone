@@ -24,7 +24,7 @@ function onboarding() {
         
       </div>
        <div>
-           <Avatar  type="sm" image={image} setImage={setImage}/>
+           <Avatar  type="xl" image={image} setImage={setImage}/>
        </div>
     </div>
   </div>;

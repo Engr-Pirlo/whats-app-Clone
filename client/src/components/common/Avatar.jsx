@@ -6,12 +6,19 @@ function Avatar({type, image , setImage}) {
         <div className="flex items-center justify-center">
           {type ==="sm" &&(
             <div className="relative h-10 w-10">
-                <Image src={image} alt="avatar" className="rounded-full" fill />
+                <Image src={image} alt="avatar" className="rounded-full cursor-pointer" fill />
             </div>
           )}
           {type ==="lg" &&(
             <div className="relative h-14 w-14">
+                <Image src={image} alt="avatar" className="rounded-full cursor-pointer" fill />
+            </div>
+          )}
+          {type ==="xl" &&(
+            <div className="relative cursor-pointer">
+            <div className="h-60 w-60">
                 <Image src={image} alt="avatar" className="rounded-full" fill />
+            </div>
             </div>
           )}
 
