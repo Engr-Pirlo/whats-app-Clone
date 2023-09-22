@@ -1,6 +1,6 @@
 import React from "react";
 
-function ContextMenu() {
+function ContextMenu(options, coordinates, contextMenu , SetContextMenu) {
   return <div>ContextMenu</div>;
 }
 
