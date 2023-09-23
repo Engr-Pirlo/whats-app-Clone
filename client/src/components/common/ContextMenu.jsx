@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 
-function ContextMenu(options, coordinates, contextMenu , SetContextMenu) {
+function ContextMenu({options, coordinates, contextMenu , SetContextMenu}) {
+  console.log(options)
   const contextMenuRef = useRef(null);
   const handleClick = (e, callback) =>{
          
@@ -12,11 +13,10 @@ function ContextMenu(options, coordinates, contextMenu , SetContextMenu) {
   
   >
     <ul>
-      {
-        options.map(({name, callback})=>(
-          <li key={name} onClick={() =>handleClick(e, callback)}><span className="text-white">{name}</span></li>
-        ))
-      }
+      {options.map(({name , callback})=>(
+        <li key={name} onClick={(e)=>handleClick(e, callback)}><span className="text-white">{name}</span></li>
+      ))}
+      
     </ul>
 
   ContextMenu

@@ -72,7 +72,7 @@ function Avatar({ type, image, setImage }) {
         )}
       </div>
       {
-        isContextMenuVisible && <ContextMenu  option={contextMenuOptions} coordinates={contextMenuCoordinates} ContextMenu={isContextMenuVisible}
+        isContextMenuVisible && <ContextMenu  options={contextMenuOptions} coordinates={contextMenuCoordinates} ContextMenu={isContextMenuVisible}
         setContextMenu={setIsContextMenuVisible}
         />
       }
